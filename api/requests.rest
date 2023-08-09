@@ -1,0 +1,18 @@
+POST http://localhost:3001/dang-ky
+Content-Type: application/json
+
+{
+    "username" : "jerryduong",
+    "password" : "cable"
+}
+
+###
+
+POST http://localhost:3001/dang-nhap
+Content-Type: application/json
+
+{
+    "username" : "jerryduong",
+    "password" : "cable1"
+}
+
