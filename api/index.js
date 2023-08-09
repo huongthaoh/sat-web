@@ -16,7 +16,7 @@ const app = express();
 
 app.use(express.json());
 app.use(cors({
-    origin: "http://chisat-web.vercel.app",
+    origin: "https://chisat.com",
     methods: ["POST", "GET", "DELETE", "PUT"],
     credentials: true, 
 }));
