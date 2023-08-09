@@ -1,0 +1,135 @@
+.services-coursesTitle {
+    text-align: center;
+    text-transform: capitalize;
+    font-size: 2em;
+    margin-top: 60px;
+    align-self: start;
+}
+
+.services-coursesContainer {
+    border: 1px solid var(--cl-primary);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    padding: 25px;
+    align-items: center;
+    height: fit-content;
+    margin: 60px 0;
+}
+
+.services-coursesOne, .services-coursesTwo {
+    display: flex;
+    /* border: 1px solid var(--cl-primary); */
+    border-radius: 10px;
+    padding: 25px;
+    
+    /* background-color: var(--cl-light-alt); */
+
+}
+
+.services-coursesRight {
+    display: flex;
+}
+
+.services-coursesLeft {
+    border-right: 1px solid var(--cl-primary);
+    padding-right: 15px;
+    width: 33%;
+}
+
+.services-coursesLeft h3 {
+    color: var(--cl-dark);
+}
+
+.services-coursesLeft h5 {
+    font-size: 1em;
+    font-weight: 500;
+    color: var(--cl-primary);
+}
+
+.services-coursesBoxOne {
+    border-right: 1px solid var(--cl-primary);
+
+}
+
+.services-coursesBoxOne, .services-coursesBoxTwo {
+    /* background-color: aqua; */
+    padding: 0 20px;
+    width: 50%;
+    position: relative;
+}
+
+.services-coursesBoxOne h3, .services-coursesBoxTwo h3 {
+    /* border-bottom: 1px solid var(--cl-primary); */
+    padding-bottom: 10px;
+}
+
+.services-coursesBoxOne h2, .services-coursesBoxTwo h2 {
+    position: absolute;
+    font-size: 8em;
+    font-weight: 800;
+    color: rgba(0, 0, 0, 0.05);
+    pointer-events: none;
+    top: -50px;
+    right: 20px;
+}
+
+@media all and (max-width: 1000px) {
+    .services-coursesContainer {
+        border: none;
+        box-shadow: none;
+        padding: 0;
+        margin-top: 40px;
+    }
+    .services-coursesOne, .services-coursesTwo {
+        flex-direction: column;
+        align-items: center;
+        border: none;
+        box-shadow: none;
+    }
+    .services-coursesLeft {
+        border: none;
+        margin-bottom: 20px;
+        width: 100%;
+        text-align: center;
+        z-index: 1;
+    }
+    .services-coursesRight {
+        flex-direction: column;
+        border: 1px solid var(--cl-primary);
+        border-radius: 10px;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+        padding: 10px 0;
+    }
+    .services-coursesBoxOne::after {
+        content: '';
+        display: block;
+        width: 80%;
+        height: 1px;
+        background-color: var(--cl-primary);
+        bottom: 0;
+        position: absolute;
+    }
+    
+    .services-coursesBoxOne, .services-coursesBoxTwo {
+        padding: 20px;
+        border: none;
+        width: 100%;
+        overflow: hidden;
+    }
+    .services-coursesBoxOne h3, .services-coursesBoxTwo h3 {
+        border: none;
+        font-size: 1.25em;
+        font-weight: 500;
+    }
+
+    .services-coursesBoxOne h2 {
+        top: -30px;
+        right: 10px;
+    }
+
+    .services-coursesBoxTwo h2 {
+        top: -20px;
+        right: 10px;
+    }
+
+}

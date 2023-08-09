@@ -1,0 +1,26 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.App {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+
+
+}
+
+.app-body {
+    /* position: relative; */
+    flex: 1;
+
+}
+
+.app-footer {
+    /* position: absolute; */
+    width: 100%;
+    margin-top: auto;
+
+}

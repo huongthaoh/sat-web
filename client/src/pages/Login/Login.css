@@ -1,0 +1,33 @@
+.login-form {
+    max-width: 400px;
+    margin: 20px auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.login-form > h2 {
+    margin-bottom: 20px;
+    text-align: center;
+    color: var(--cl-primary);
+}
+
+.login-form > input {
+    display: block;
+    margin-bottom: 5px;
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: solid 1px;
+}
+
+.login-form > button {
+    display: block;
+    margin: 20px 0;
+    padding: 3px 40px;
+    border-radius: 20px;
+    border: solid 1px var(--cl-dark);
+    background-color: var(--cl-primary);
+    color: white;
+    align-self: center;
+}
+

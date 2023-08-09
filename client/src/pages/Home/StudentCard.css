@@ -1,0 +1,10 @@
+.home-sectionHeader {
+    text-align: center;
+    font-size: 2em;
+    font-weight: 700;
+    font-family: var(--font-family-heading);
+    margin: 40px;
+    text-transform: capitalize;
+}
+
+

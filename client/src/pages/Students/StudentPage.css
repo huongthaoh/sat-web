@@ -1,0 +1,136 @@
+.student-container{
+    /* width: 1400px; */
+    margin: 20px auto;
+    columns: 3;
+    column-gap: 20px;
+    /* height: 100%; */
+}
+
+.pageTitle {
+    margin: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.pageTitle h1 {
+    font-weight: 600;
+    font-size: 2.5em;
+    text-align: center;
+    text-transform: capitalize;
+    color: var(--cl-dark-alt);
+}
+
+.pageTitle h5 {
+    color: var(--cl-gray-3);
+    max-width: 50%;
+    text-align: center;
+    line-height: 1.5;
+    margin: 15px;
+}
+
+.student-container .box {
+    width: 100%;
+    margin-top: 10px;
+    border: 3px solid var(--cl-gray-2);
+    border-radius: 18px;
+    break-inside: avoid;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    transition: 0.5s ease-in-out;
+}
+
+
+.student-container .box img {
+    width: 100%;
+    height: auto;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    /* margin-bottom: 10px; */
+}
+
+.createBtn {
+    text-decoration: none;
+    padding: 8px 20px;
+    border-radius: 10px;
+    color: var(--cl-light);
+    font-weight: 500;
+    margin: 20px;
+    background-color: var(--cl-gray-3);
+    /* align-self: fl; */
+}
+
+.student-textBox {
+    padding:  30px;
+    margin-top: 10px;
+    align-self: flex-start;
+    text-align: left;
+    columns: var(--cl-gray-3);
+
+    /* background-color: aquamarine; */
+}
+
+.student-name {
+    color: var(--cl-dark-alt);
+    font-weight: 600;
+}
+
+.student-score {
+    font-size: 1.1em;
+    font-weight: 500;
+    margin: 20px 0;
+}
+
+.card-editBtn {
+    text-decoration: none;
+    background-color: var(--cl-gray-2);
+    padding: 10px 20px;
+    align-self: center;
+    width: fit-content;
+    /* margin-bottom: 10px; */
+    border-radius: 10px;
+    transition: 0.5s;
+    margin-top: 10px;
+
+}
+
+.card-editBtn__link {
+    text-decoration: none;
+    color: var(--cl-dark);
+    font-weight: 500;
+}
+
+.card-editBtn:hover {
+    cursor: pointer;
+    background-color: var(--cl-gray-3);
+}
+
+.card-editBtn:hover .card-editBtn__link {
+    color: var(--cl-light)
+}
+
+@media all and (max-width: 1280px) {
+    .student-container {
+        columns: 2;
+    }
+}
+
+@media all and (max-width: 780px) {
+    .student-container {
+        columns: 1;
+    }
+    .pageTitle h5 {
+        max-width: 90%;
+    }
+    .pageTitle h1 {
+        font-size: 2.2em;
+    }
+
+}

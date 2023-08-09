@@ -1,0 +1,113 @@
+#footer-container {
+    margin-top: 60px;
+    display: grid;
+    /* justify-content: flex-end; */
+    /* justify-content: space-around; */
+    align-content: flex-end;
+    width: 100%;
+    /* min-height: 100vh; */
+
+}
+
+footer {
+    position: relative;
+    width: 100%;
+    height: auto;
+    padding: 20px 100px;
+    padding-top: 60px;
+}
+
+footer::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    /* align-self: center; */
+    width: 100%;
+    height: 2px;
+    background: var(--cl-light-alt);
+}
+
+.footer-content {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    grid-gap: 20px;
+}
+
+.footer-sec h2 {
+    position: relative;
+    font-weight: 500;
+    font-size: 1.25em;
+    margin-bottom: 15px;
+}
+
+.footer-sec h2::before {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 50px;
+    height: 2px;
+    background: var(--cl-secondary);
+}
+
+.footer-sec ul {
+    margin-top: 20px;
+    padding: 0;
+}
+
+.footer-sec ul li {
+    list-style: none;
+    margin: 0;
+}
+
+.footer-secUl li a {
+    text-decoration: none;
+    color: var(--cl-gray-3);
+    line-height: 2;
+}
+
+
+.footer-sec li .footer-secLink{
+    text-decoration: none;
+    position: relative;
+    color: inherit;
+    margin-bottom: 5px;
+    display: inline-block;
+    padding: 5px 10px;
+    border-radius: 10px;
+    transition: 0.5s;
+}
+
+.footer-sec li:hover .footer-secLink{
+    background-color: var(--cl-hover);
+}
+
+.footer-copyrightText {
+    width: 100%;
+    background-color: var(--cl-gray-2);
+    padding: 10px;
+    text-align: center;
+    font-weight: 400;
+
+    color: var(--cl-gray-3);
+    display: flex;
+    justify-content: center;
+    /* align-items: flex-end; */
+}
+
+@media screen and (max-width: 991px) {
+    footer {
+        padding: 40px;
+    }
+    .footer-content {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        grid-gap: 20px;
+    }
+    .footer-sec {
+        margin-bottom: 0;
+    }
+}
