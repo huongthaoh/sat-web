@@ -15,7 +15,11 @@ const fs = require('fs');
 const app = express();
 
 app.use(express.json());
-app.use(cors({credentials: true, origin: "http://localhost:3000"}));
+app.use(cors({
+    origin: "http://chisat-web.vercel.app",
+    methods: ["POST", "GET", "DELETE", "PUT"],
+    credentials: true, 
+}));
 app.use(cookieParser());
 app.use('/uploads', express.static(__dirname + "/uploads"));
 app.use('/uploadsStudent', express.static(__dirname + "/uploadsStudent"));
