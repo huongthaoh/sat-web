@@ -12,7 +12,7 @@ function StudentPage() {
     const username = userInfo?.username;
 
     useEffect(() => {
-        fetch("http://localhost:3001/post-student").then(response => {
+        fetch("https://chi-sat.onrender.com/post-student").then(response => {
             response.json().then(cards => {
                 setCards(cards);
             })
@@ -32,7 +32,7 @@ function StudentPage() {
         {cards.length > 0 && cards.map(card => (
             <div className="box">
     
-            <img src={"http://localhost:3001/"+card.cover} alt="" />
+            <img src={"https://chi-sat.onrender.com/"+card.cover} alt="" />
 
             <div className="student-textBox">
                 <h4 className='student-name'>{card.name}</h4>

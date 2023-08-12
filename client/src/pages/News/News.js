@@ -11,7 +11,7 @@ function News() {
   const [posts, setPosts] = useState([]);
   
   useEffect(() => {
-    fetch("http://localhost:3001/post-article").then(response => {
+    fetch("https://chi-sat.onrender.com/post-article").then(response => {
       response.json().then(posts => {
         setPosts(posts);
       });
@@ -33,7 +33,7 @@ function News() {
         {posts.length > 0 && posts.map(post => (
             <div className="box">
     
-            <img src={"http://localhost:3001/"+post.cover} alt="" />
+            <img src={"https://chi-sat.onrender.com/"+post.cover} alt="" />
 
             <div className="student-textBox">
                 <h4 className='student-name'>{post.title}</h4>

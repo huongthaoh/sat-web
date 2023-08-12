@@ -19,7 +19,7 @@ function CreateArticle() {
         data.set('file', files[0]);
         e.preventDefault();
         // console.log(files);
-        const response = await fetch("http://localhost:3001/post-article", {
+        const response = await fetch("https://chi-sat.onrender.com/post-article", {
             method: "POST",
             body:  data,
         });
