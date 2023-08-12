@@ -4,6 +4,8 @@ const cors = require('cors');
 const AdminModel = require('./models/Admin');
 const ArticleModel = require('./models/Article');
 const StudentModel = require('./models/Students');
+require('dotenv').config();
+
 
 const bcrypt = require('bcryptjs');
 const jwt = require('jsonwebtoken');
@@ -16,7 +18,7 @@ const app = express();
 
 app.use(express.json());
 app.use(cors({
-    origin: "https://chisat.com",
+    origin: "http://localhost:3000",
     methods: ["POST", "GET", "DELETE", "PUT"],
     credentials: true, 
 }));
@@ -25,16 +27,18 @@ app.use('/uploads', express.static(__dirname + "/uploads"));
 app.use('/uploadsStudent', express.static(__dirname + "/uploadsStudent"));
 
 const salt = bcrypt.genSaltSync(10);
-const secret = "jerry11reallystinks11"
+const secret = process.env.JWT_SECRET;
 const uploadMiddleware = multer({ dest: 'uploads/' });
 const uploadMiddlewareStudent = multer({ dest: 'uploadsStudent/' });
 
-const URL = "mongodb+srv://huongthaoh:chisat123@chisat.rcykyuz.mongodb.net/?retryWrites=true&w=majority"
+// const URL = "mongodb+srv://huongthaoh:chisat123@chisat.rcykyuz.mongodb.net/?retryWrites=true&w=majority"
+const URL = process.env.DB_URL;
+
 mongoose.connect(URL, {
     useNewUrlParser: true,
     useUnifiedTopology: true
 }).then(() => console.log("Connect to DB."))
-.catch(console.err);
+.catch(console.error);
 
 app.post('/dang-ky', async (req, res) => {
     const {username, password} = req.body;
@@ -63,7 +67,6 @@ app.post('/dang-nhap', async (req, res) => {
                     username,
                 });
             })
-            // res.json(passCorrect);
         } else {
             res.status(400).json("username or password is incorrect. please try again.");
         }  
