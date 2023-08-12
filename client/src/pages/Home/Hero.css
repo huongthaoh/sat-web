@@ -144,6 +144,7 @@
     .home-heroSci li a {
         background-color: var(--cl-primary);
         color: var(--cl-light);
+        
     }
 }
 

@@ -33,7 +33,7 @@ function Register() {
     <div className='container py-5 h-100'>
       
         <form onSubmit = {register} className = "login-form" action="">
-          <h2 className='login-title'>SIGN UP</h2>
+          <h2 className='login-title'>sign up</h2>
           <input  type="text" 
                   placeholder='username'
                   value = {username}

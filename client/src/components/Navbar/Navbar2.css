@@ -14,6 +14,10 @@ nav {
     /* background-color: var(--cl-light); */
 }
 
+.nav--user {
+    display: flex;
+}
+
 .nav--boxshadow {
     height: 5px;
     width: 100%;

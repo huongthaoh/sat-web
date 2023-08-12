@@ -79,10 +79,13 @@ function Navbar() {
             <li><Link className = "nav--link" to = "/hoc-vien">Thành tích học viên</Link></li>
             <li><Link className = "nav--link" to = "/tin-tuc">Tin tức</Link></li>
             {/* <li><Link className = "nav--link" to = "/">Trang chủ</Link></li> */}
-
             {username && (
+                <div className='nav--user'>
+                <li><Link className = "nav--link" to="/dang-ky">Register</Link></li>
                 <li><a href = "" onClick = {logout}> Sign out</a></li>
+                </div>    
             )}
+            
             {!username && ( 
                 <li><Link className = "nav--link" to="/dang-nhap">Login</Link></li>
             )}
