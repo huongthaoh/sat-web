@@ -18,7 +18,7 @@ const app = express();
 
 app.use(express.json());
 app.use(cors({
-    origin: "http://localhost:3000",
+    origin: "https://helpful-mochi-6e1153.netlify.app",
     methods: ["POST", "GET", "DELETE", "PUT"],
     credentials: true, 
 }));
@@ -31,7 +31,7 @@ const secret = process.env.JWT_SECRET;
 const uploadMiddleware = multer({ dest: 'uploads/' });
 const uploadMiddlewareStudent = multer({ dest: 'uploadsStudent/' });
 
-// const URL = "mongodb+srv://huongthaoh:chisat123@chisat.rcykyuz.mongodb.net/?retryWrites=true&w=majority"
+
 const URL = process.env.DB_URL;
 
 mongoose.connect(URL, {
