@@ -1,7 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import './Hero.css'
-import pfp from "./maichi_profile.png"
 import FacebookRoundedIcon from '@mui/icons-material/FacebookRounded';
 import EmailRoundedIcon from '@mui/icons-material/EmailRounded';
 import ChatRoundedIcon from '@mui/icons-material/ChatRounded';
