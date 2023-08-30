@@ -18,7 +18,7 @@ const app = express();
 
 app.use(express.json());
 app.use(cors({
-    origin: "https://chi-sat.onrender.com",
+    origin: "https://chisat.com",
     methods: ["POST", "GET", "DELETE", "PUT"],
     credentials: true, 
 }));
