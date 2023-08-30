@@ -18,7 +18,7 @@ const app = express();
 
 app.use(express.json());
 app.use(cors({
-    origin: "https://helpful-mochi-6e1153.netlify.app",
+    origin: "http://chisat.com",
     methods: ["POST", "GET", "DELETE", "PUT"],
     credentials: true, 
 }));
