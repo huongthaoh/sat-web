@@ -1,5 +1,4 @@
 #contactForm {
-    /* background-color: var(--cl-primary); */
     padding: 40px 40px;
     border-radius: 25px;
     /* color: var(--cl-light); */
@@ -16,8 +15,6 @@
 }
 
 .home-formSectionDouble > .home-formSection {
-    /* width: 60% !important; */
-    /* background-color: aqua; */
     width: 49%;
 }
 
@@ -51,5 +48,22 @@
     color: var(--cl-light-alt);
     font-size: 1.2em;
     font-weight: 500;
-    /* background-color: var(--cl-secondary); */
+
+}
+
+@media all and (max-width: 600px) {
+    .home-formSectionDouble {
+        flex-direction: column;
+    }
+    .home-formSectionDouble > .home-formSection {
+        width: 100%;
+    }
+    .contactButton {
+        width: max-content;
+        padding: 10px 20px;
+        font-size: 1em;
+    }
+    .home-formSection label {
+        font-size: 1em;
+    }
 }

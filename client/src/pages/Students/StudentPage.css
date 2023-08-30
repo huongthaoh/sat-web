@@ -126,6 +126,9 @@
     .student-container {
         columns: 1;
     }
+    .pageTitle {
+        margin: 40px 20px;
+    }
     .pageTitle h5 {
         max-width: 90%;
     }

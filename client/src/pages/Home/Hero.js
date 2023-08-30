@@ -22,7 +22,7 @@ function Hero() {
           {/* <p>Chi SAT được thành lập bởi Nguyễn Mai Chi. Chi là <strong>cựu học sinh chuyên Anh trường Hà Nội - Amsterdam</strong> và đã từng đạt số điểm thi SAT là <strong>1590 (790 RW, 800 MATH) trên 1600</strong>. Với <strong>hơn ba năm kinh nghiệm giảng dạy SAT</strong>, Mai Chi mong muốn mang kiến thứcsc và chuyên môn của mình giúp các bạn học sinh chinh phục kỳ thi SAT. </p> */}
           {/* <p>Lớp học Chi SAT đào tạo chuyên sâu về kĩ năng Đọc, Viết, Toán, và chữa đề, với chất lượng cao và giá cả phải chăng nhất. Tính đến năm 2023, Mai Chi đã <strong>giúp hơn 200 học viên đạt số điểm từ 1300-1500 chỉ sau 60 tới 80 giờ học.</strong> </p> */}
           <Link className = "home-heroLink" to = "/khoa-hoc">Tìm hiểu thêm 
-            <ArrowForwardIcon className='home-heroLinkIcon' style = {{marginLeft: "5px"}}/>
+            <ArrowForwardIcon className='home-heroLinkIcon' style = {{marginLeft: "5px", fontSize: "16px"}}/>
           </Link>
         </div>
         <div className="home-heroImage">
