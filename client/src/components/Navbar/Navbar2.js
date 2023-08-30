@@ -12,7 +12,7 @@ function Navbar() {
     const [menuActive, setMenuActive] = useState(false);
 
     useEffect(() => {
-        fetch("https://chisat.comprofile", {
+        fetch("https://chi-sat.onrender.com/profile", {
         credentials: "include",
         }).then(response => {
         response.json().then(userInfo => {
@@ -22,7 +22,7 @@ function Navbar() {
     }, []);
         
     const logout = () => {
-        fetch('https://chisat.comlogout', {
+        fetch('https://chi-sat.onrender.com/logout', {
             credentials: 'include',
             method: "POST",
         })

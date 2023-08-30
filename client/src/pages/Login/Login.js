@@ -12,7 +12,7 @@ function Login() {
   
   const login = async(ev) => {
     ev.preventDefault();
-    const response = await fetch('https://chisat.comdang-nhap', {
+    const response = await fetch('https://chi-sat.onrender.com/dang-nhap', {
       method: 'POST',
       headers: {'Content-Type': 'application/json'},
       body: JSON.stringify({username, password}),

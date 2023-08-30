@@ -19,7 +19,7 @@ function CreateCard() {
         data.set('quote', quote);
         data.set('file', files[0]);
         e.preventDefault();
-        const response = await fetch("https://chisat.compost-student", {
+        const response = await fetch("https://chi-sat.onrender.com/post-student", {
             method: "POST",
             body:  data,
         });
