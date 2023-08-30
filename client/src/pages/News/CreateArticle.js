@@ -19,7 +19,7 @@ function CreateArticle() {
         data.set('file', files[0]);
         e.preventDefault();
         // console.log(files);
-        const response = await fetch("http://chisat.com/post-article", {
+        const response = await fetch("https://chisat.compost-article", {
             method: "POST",
             body:  data,
         });

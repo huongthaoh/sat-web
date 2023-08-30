@@ -12,7 +12,7 @@ function StudentPage() {
     const username = userInfo?.username;
 
     useEffect(() => {
-        fetch("http://chisat.com/post-student").then(response => {
+        fetch("https://chisat.compost-student").then(response => {
             response.json().then(cards => {
                 setCards(cards);
             })
@@ -32,7 +32,7 @@ function StudentPage() {
         {cards.length > 0 && cards.map(card => (
             <div className="box">
     
-            <img src={"http://chisat.com/"+card.cover} alt="" />
+            <img src={"https://chisat.com"+card.cover} alt="" />
 
             <div className="student-textBox">
                 <h4 className='student-name'>{card.name}</h4>

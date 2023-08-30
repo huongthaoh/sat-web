@@ -13,7 +13,7 @@ function EditCard() {
 
     useEffect(() => {
         console.log(id);
-        fetch(`http://chisat.com/post-student/${id}`)
+        fetch(`https://chisat.compost-student/${id}`)
             .then(res => {
                 res.json().then(cardInfo => {
                     setName(cardInfo.name);
@@ -34,7 +34,7 @@ function EditCard() {
         data.set('id', id);
         if (files?.[0]) {data.set('file', files?.[0]);}
 
-        const response = await fetch("http://chisat.com/edit-student", {
+        const response = await fetch("https://chisat.comedit-student", {
             method: "PUT",
             body: data,
         });
@@ -44,7 +44,7 @@ function EditCard() {
     }
 
     const deleteCard = async () => {
-        const response = await fetch("http://chisat.com/delete-student/" + id, {
+        const response = await fetch("https://chisat.comdelete-student/" + id, {
             method: "DELETE",
         })
         if (response.ok) {

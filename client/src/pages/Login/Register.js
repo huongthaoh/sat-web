@@ -11,7 +11,7 @@ function Register() {
   
   const register = async(ev) => {
     ev.preventDefault();
-    const response = await fetch('http://chisat.com/dang-ky', {
+    const response = await fetch('https://chisat.comdang-ky', {
       method: 'POST',
       headers: {'Content-Type': 'application/json'},
       body: JSON.stringify({username, password}),

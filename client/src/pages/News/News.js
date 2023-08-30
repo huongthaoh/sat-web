@@ -11,7 +11,7 @@ function News() {
   const [posts, setPosts] = useState([]);
   
   useEffect(() => {
-    fetch("http://chisat.com/post-article").then(response => {
+    fetch("https://chisat.compost-article").then(response => {
       response.json().then(posts => {
         setPosts(posts);
       });
@@ -33,7 +33,7 @@ function News() {
         {posts.length > 0 && posts.map(post => (
             <div className="box">
     
-            <img src={"http://chisat.com/"+post.cover} alt="" />
+            <img src={"https://chisat.com"+post.cover} alt="" />
 
             <div className="student-textBox">
                 <h4 className='student-name'>{post.title}</h4>
