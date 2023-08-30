@@ -17,6 +17,7 @@ import Article from './pages/Article/Article';
 import EditPost from './pages/Article/EditPost';
 import CreateCard from './pages/Students/CreateCard';
 import EditCard from './pages/Students/EditCard';
+import Messenger from './components/Messenger';
 
 function App() {
 
@@ -45,7 +46,7 @@ function App() {
         </div>
       </UserContextProvider>
       
-      
+      <Messenger/>
       <div className='app-footer'><Footer/></div>
     </div>
   );
