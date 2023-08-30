@@ -16,7 +16,7 @@ function Article() {
 
 
     useEffect(() => {
-        fetch(`https://chi-sat.onrender.com/post/${id}`)
+        fetch(`http://chisat.com/post/${id}`)
             .then(res => {
                 res.json().then(postInfo => {
                     setPostInfo(postInfo);
@@ -25,7 +25,7 @@ function Article() {
     }, []);
 
     const deletePost = async () => {
-        const response = await fetch(`https://chi-sat.onrender.com/delete-post/${id}`, {
+        const response = await fetch(`http://chisat.com/delete-post/${id}`, {
             method: "DELETE",
         })
         if (response.ok) {
@@ -59,7 +59,7 @@ function Article() {
         
 
         <div className='article__img'>
-            <img src= {`https://chi-sat.onrender.com/${postInfo.cover}`} alt="" />
+            <img src= {`http://chisat.com/${postInfo.cover}`} alt="" />
         </div>
 
         <div className = "article__content" dangerouslySetInnerHTML={{__html:postInfo.content}} />
